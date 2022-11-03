@@ -1,18 +1,42 @@
 body {
     background-color: rgb(180, 180, 180);
 }
-.title_bar {
-    background-color: rgb(92, 92, 92);
-    position: fixed;
-    height: 10%;
-    border-radius: 10px;
-    border-width: 2px;
-    border-color: black;
-    align-items: center;
-    justify-content: center;
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
 }
-.title {
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
+
+.navbar a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    float: center;
+}
+  
+.navbar a:hover {
+    background-color: #000;
+}
+  
+.active {
+    background-color: #04AA6D;
+}
+  
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+.search {
+    background-color: gray;
+    border: solid 2px white;
+    border-radius: 2px;
+    position: relative;
+    right: 1px;
+}
+.logo {
+    position: fixed;
+    left: 1px;
 }
