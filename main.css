@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
 }
 .navbar {
-    background-color: #555;
+    background-color: rgba(85, 85, 85, 0.822);
     overflow: auto;
     border-radius: 15px;
     border-style: double;
@@ -51,8 +51,11 @@ body {
 }
 .title {
     font-family: 'Times New Roman', Times, serif;
-    color:rgb(187, 255, 0);
-    background-color: #000;
+    color:rgb(255, 235, 59);
+    text-shadow: rgba(85, 85, 85, 0.822);
+    background-color: rgba(85, 85, 85, 0);
     text-align: center;
     font-size: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
