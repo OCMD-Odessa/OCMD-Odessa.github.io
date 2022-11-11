@@ -1,28 +1,38 @@
 body {
     background-color: rgb(180, 180, 180);
+    margin: 1%;
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .navbar {
-    width: 100%;
     background-color: #555;
     overflow: auto;
+    border-radius: 15px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #000;
 }
-
+.logo {
+    width: 2cm;
+    height: 2cm;
+    float: right;
+}
 .navbar a {
     padding: 12px;
     color: white;
     text-decoration: none;
     font-size: 17px;
-    float: center;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
 }
-  
 .navbar a:hover {
     background-color: #000;
 }
-  
 .active {
     background-color: #04AA6D;
 }
-  
 @media screen and (max-width: 500px) {
     .navbar a {
       float: none;
@@ -33,10 +43,16 @@ body {
     background-color: gray;
     border: solid 2px white;
     border-radius: 2px;
-    position: relative;
-    right: 1px;
+    float: right;
 }
 .logo {
     position: fixed;
     left: 1px;
+}
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(187, 255, 0);
+    background-color: #000;
+    text-align: center;
+    font-size: 40px;
 }
