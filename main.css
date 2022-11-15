@@ -53,9 +53,23 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color:rgb(255, 235, 59);
     text-shadow: rgba(85, 85, 85, 0.822);
-    background-color: rgba(85, 85, 85, 0);
+    background-color: rgba(85, 85, 85, 0.815);
     text-align: center;
     font-size: 40px;
     margin-left: 20%;
     margin-right: 20%;
+    text-shadow: 5px 5px 10px black;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 3px;
+}
+
+.transition_block {
+    margin: -1%;
+    position: fixed;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    transition: width 1s;
 }
