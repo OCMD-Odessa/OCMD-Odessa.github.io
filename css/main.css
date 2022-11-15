@@ -4,6 +4,8 @@ body {
     background-image: url("images/background.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
 }
 .navbar {
     background-color: rgba(85, 85, 85, 0.822);
