@@ -53,6 +53,7 @@ body {
     position: fixed;
     left: 1px;
 }
+
 .main_container {
     font-family: 'Times New Roman', Times, serif;
     background-color: rgba(85, 85, 85, 0.815);
@@ -88,4 +89,25 @@ body {
     height: 100%;
     width: 100%;
     transition: width 1s;
+}
+
+.news_grid {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-content: center;
+}
+.news_grid div {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+.news_grid {
+    grid-template-columns: repeat(1, 60%);
+}
 }
