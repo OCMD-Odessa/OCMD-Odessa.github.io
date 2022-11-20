@@ -94,20 +94,70 @@ body {
 .news_grid {
     margin: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 25%);
+    grid-template-areas:
+    'news_h contact_h structure_h'
+    'news1 contact struct' 
+    'news2 contact struct';
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 10%;
 }
-.news_grid div {
+.news_item1 {
+    grid-area: news1;
     background-color: white;
     border-radius: 20px;
     padding: 10px;
     text-align: center;
 }
+.news_item2 {
+    grid-area: news2;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.contact {
+    grid-area: contact;
+    background-color: rgb(151, 151, 151);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.structure {
+    grid-area: struct;
+    background-color: rgb(70, 70, 70);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.news_h {
+    text-align: center;
+    color: black;
+}
+.contact_h {
+    text-align: center;
+    color: black;
+}
+.structure_h {
+    text-align: center;
+    color: black;
+}
 
 @media (max-width: 1000px) {
-.news_grid {
-    grid-template-columns: repeat(1, 60%);
+    .news_grid {
+        grid-template-areas:
+        'news_h'
+        'news1'
+        'news2'
+        'contact_h'
+        'contact'
+        'structure_h'
+        'struct';
+    }
 }
+
+.house_location {
+    border-radius: 20px;
 }
