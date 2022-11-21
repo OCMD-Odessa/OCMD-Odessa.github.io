@@ -87,7 +87,7 @@ body {
     position: fixed;
     background-color: #000;
     height: 100%;
-    width: 100%;
+    width: 0%;
     transition: width 1s;
 }
 
