@@ -1,0 +1,19 @@
+.news_grid {
+    display: grid;
+    grid-template-rows: 3;
+    width: 80%;
+}
+.news_box {
+    background-color: rgb(102, 102, 102);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    padding: 5px;
+}
+
+@media (max-width: 1000px) {
+    .news_grid {
+        grid-template-columns: 1;
+    }
+}
