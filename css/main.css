@@ -145,6 +145,12 @@ body {
     color: black;
 }
 
+
+
+.house_location {
+    border-radius: 20px;
+}
+
 @media (max-width: 1000px) {
     .news_grid {
         grid-template-areas:
@@ -156,8 +162,8 @@ body {
         'structure_h'
         'struct';
     }
-}
-
-.house_location {
-    border-radius: 20px;
+    .house_location {
+        border-radius: 20px;
+        width: 90%;
+    }    
 }
