@@ -222,3 +222,12 @@ hr {
         'footer_structure';
     }
 }
+
+.images_grid {
+    display: grid;
+    grid-template-areas: 
+    'location photo1 photo2';
+}
+.position_grid_photo1 {
+    grid-area: photo1;
+}
