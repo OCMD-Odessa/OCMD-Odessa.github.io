@@ -198,6 +198,7 @@ hr {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     margin-left: 10%;
+    margin-bottom: 0px;
 }
 .footer_contacts {
     grid-area: footer_contacts;
